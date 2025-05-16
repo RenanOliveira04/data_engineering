@@ -76,8 +76,7 @@ data_engineering/
 
 ## Configuração do Ambiente
 
-```
-mermaid
+```mermaid
 flowchart LR
     A[Clone do Repositório] --> B[Download Dataset Kaggle]
     B --> C[Extrair CSVs para /dataset]
@@ -102,8 +101,7 @@ flowchart LR
 3. Extraia os arquivos CSV para a pasta `dataset/` (Landing Zone)
 
 4. Instale as dependências necessárias:
-   ```
-   bash
+   ```bash
    pip install -r requirements.txt
    ```
 
@@ -119,8 +117,7 @@ flowchart LR
 
 ## Fluxo de Processamento de Dados e Análise
 
-```
-mermaid
+```mermaid
 flowchart TD
     subgraph Processing ["Processamento de Dados (Camadas Medallion)"]
         A[Landing Zone:<br>CSV Files] -->|Notebook 1| B[Bronze Layer:<br>SQLite Tables]
@@ -211,8 +208,7 @@ flowchart TD
 
 O modelo estrela implementado na camada Gold segue esta estrutura:
 
-```
-mermaid
+```mermaid
 erDiagram
     DIM_TIME ||--o{ FACT_SALES : references
     DIM_CUSTOMERS ||--o{ FACT_SALES : references
