@@ -100,13 +100,7 @@ flowchart LR
 
 ## Configuração do Ambiente
 
-1. Clone este repositório
-   ```bash
-git clone https://github.com/username/data_engineering.git
-cd data_engineering
-```
-
-```
+1. Clone este repositório: git clone https://github.com/username/data_engineering.git ; cd data_engineering
 
 2. Baixe o dataset do Kaggle: [Brazilian E-commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 
