@@ -16,11 +16,11 @@ flowchart TB
     C -->|Agregação| D[Gold]
     D -->|Análise| E[Insights]
     
-    style A fill:#f9f9f9,stroke:#333,stroke-width:2px
-    style B fill:#cd7f32,stroke:#333,stroke-width:2px
-    style C fill:#c0c0c0,stroke:#333,stroke-width:2px
-    style D fill:#ffd700,stroke:#333,stroke-width:2px
-    style E fill:#39ff14,stroke:#333,stroke-width:2px
+    style A fill:#f9f9f9,stroke:#333,stroke-width:2px,color:#000
+    style B fill:#cd7f32,stroke:#333,stroke-width:2px,color:#000
+    style C fill:#c0c0c0,stroke:#333,stroke-width:2px,color:#000
+    style D fill:#ffd700,stroke:#333,stroke-width:2px,color:#000
+    style E fill:#99ff99,stroke:#333,stroke-width:2px,color:#000
 ```
 
 1. **Landing Zone**: Dados brutos, exatamente como foram obtidos do Kaggle
@@ -46,11 +46,19 @@ graph TD
     F --> F5[5_solucao_problemas.ipynb]
     F --> F6[6_visualizacao_dashboards.ipynb]
     
-    style B fill:#ffcc99,stroke:#333,stroke-width:1px
-    style C fill:#cd7f32,stroke:#333,stroke-width:1px
-    style D fill:#c0c0c0,stroke:#333,stroke-width:1px
-    style E fill:#ffd700,stroke:#333,stroke-width:1px
-    style F fill:#99ccff,stroke:#333,stroke-width:1px
+    style A fill:#f5f5f5,stroke:#333,stroke-width:1px,color:#000
+    style B fill:#ffcc99,stroke:#333,stroke-width:1px,color:#000
+    style C fill:#cd7f32,stroke:#333,stroke-width:1px,color:#000
+    style D fill:#c0c0c0,stroke:#333,stroke-width:1px,color:#000
+    style E fill:#ffd700,stroke:#333,stroke-width:1px,color:#000
+    style F fill:#99ccff,stroke:#333,stroke-width:1px,color:#000
+    style G fill:#f5f5f5,stroke:#333,stroke-width:1px,color:#000
+    style F1 fill:#f5f5f5,stroke:#333,stroke-width:1px,color:#000
+    style F2 fill:#f5f5f5,stroke:#333,stroke-width:1px,color:#000
+    style F3 fill:#f5f5f5,stroke:#333,stroke-width:1px,color:#000
+    style F4 fill:#f5f5f5,stroke:#333,stroke-width:1px,color:#000
+    style F5 fill:#f5f5f5,stroke:#333,stroke-width:1px,color:#000
+    style F6 fill:#f5f5f5,stroke:#333,stroke-width:1px,color:#000
 ```
 
 ```
@@ -85,16 +93,20 @@ flowchart LR
     E --> F[Executar Notebook 3]
     F --> G[Executar Notebooks de Análise]
     
-    style A fill:#f9f9f9,stroke:#333,stroke-width:1px
-    style G fill:#99ff99,stroke:#333,stroke-width:1px
+    style A fill:#f9f9f9,stroke:#333,stroke-width:1px,color:#000
+    style B fill:#f5f5f5,stroke:#333,stroke-width:1px,color:#000
+    style C fill:#f5f5f5,stroke:#333,stroke-width:1px,color:#000
+    style D fill:#f5f5f5,stroke:#333,stroke-width:1px,color:#000
+    style E fill:#f5f5f5,stroke:#333,stroke-width:1px,color:#000
+    style F fill:#f5f5f5,stroke:#333,stroke-width:1px,color:#000
+    style G fill:#99ff99,stroke:#333,stroke-width:1px,color:#000
 ```
 
 1. Clone este repositório
-   ```
-   bash
-   git clone [URL_DO_REPOSITÓRIO]
-   cd data_engineering
-   ```
+   ```bash
+git clone https://github.com/username/data_engineering.git
+cd data_engineering
+```
 
 2. Baixe o dataset do Kaggle: [Brazilian E-commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 
@@ -135,16 +147,16 @@ flowchart TD
     F --> H
     G --> H
     
-    style A fill:#f9f9f9,stroke:#333,stroke-width:1px
-    style B fill:#cd7f32,stroke:#333,stroke-width:1px
-    style C fill:#c0c0c0,stroke:#333,stroke-width:1px
-    style D fill:#ffd700,stroke:#333,stroke-width:1px
-    style E fill:#99ccff,stroke:#333,stroke-width:1px
-    style F fill:#99ccff,stroke:#333,stroke-width:1px
-    style G fill:#99ccff,stroke:#333,stroke-width:1px
-    style H fill:#99ff99,stroke:#333,stroke-width:1px
-    style Processing fill:#f5f5f5,stroke:#666,stroke-width:2px
-    style Analysis fill:#f5f5f5,stroke:#666,stroke-width:2px
+    style A fill:#f9f9f9,stroke:#333,stroke-width:1px,color:#000
+    style B fill:#cd7f32,stroke:#333,stroke-width:1px,color:#000
+    style C fill:#c0c0c0,stroke:#333,stroke-width:1px,color:#000
+    style D fill:#ffd700,stroke:#333,stroke-width:1px,color:#000
+    style E fill:#99ccff,stroke:#333,stroke-width:1px,color:#000
+    style F fill:#99ccff,stroke:#333,stroke-width:1px,color:#000
+    style G fill:#99ccff,stroke:#333,stroke-width:1px,color:#000
+    style H fill:#99ff99,stroke:#333,stroke-width:1px,color:#000
+    style Processing fill:#f5f5f5,stroke:#666,stroke-width:2px,color:#000
+    style Analysis fill:#f5f5f5,stroke:#666,stroke-width:2px,color:#000
 ```
 
 ## Descrição dos Notebooks e Camadas Medallion
