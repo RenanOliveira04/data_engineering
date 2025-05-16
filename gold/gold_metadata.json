@@ -1,0 +1,16 @@
+{
+  "tables": [
+    "dim_time",
+    "dim_products",
+    "dim_customers",
+    "dim_sellers",
+    "fact_sales",
+    "fact_reviews",
+    "agg_sales_by_category",
+    "agg_sales_by_time",
+    "agg_reviews_by_category",
+    "kpis_sales"
+  ],
+  "processing_date": "2025-05-15T14:21:16.380109",
+  "description": "Camada Gold - Tabelas dimensionais e fatos para análise de negócio"
+}
