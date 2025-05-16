@@ -1,1 +1,24 @@
-.venv
+# Ambiente virtual
+.venv/
+
+# Pastas de dados (contêm arquivos grandes)
+bronze/
+silver/
+gold/
+dataset/
+
+# Arquivos de banco de dados
+*.db
+
+# Arquivos de cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Arquivos de notebook Jupyter
+.ipynb_checkpoints
+
+# Logs e arquivos temporários
+*.log
+*.csv.tmp
+
