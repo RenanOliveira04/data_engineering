@@ -80,10 +80,6 @@ data_engineering/
 └── README.md                   # Documentação do projeto
 ```
 
-- Jupyter Notebook
-
-## Configuração do Ambiente
-
 ```mermaid
 flowchart LR
     A[Clone do Repositório] --> B[Download Dataset Kaggle]
@@ -102,11 +98,9 @@ flowchart LR
     style G fill:#99ff99,stroke:#333,stroke-width:1px,color:#000
 ```
 
+## Configuração do Ambiente
+
 1. Clone este repositório
-   ```bash
-git clone https://github.com/username/data_engineering.git
-cd data_engineering
-```
 
 2. Baixe o dataset do Kaggle: [Brazilian E-commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 
