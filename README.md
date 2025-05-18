@@ -198,7 +198,7 @@ flowchart TD
   - Valor médio de pedido por estado brasileiro
 - **Resultados**: Visualizações e insights sobre padrões de vendas e logística
 
-### 5. Solução de Problemas de Negócio (5_solucao_problemas.ipynb)
+### 5. Solução de Problemas de Negócio (5_solucao_problemas.ipynb / 5_solucao_problemas.py)
 - **Objetivo**: Resolver questões específicas de negócio com análises avançadas
 - **Implementações**:
   - **Análise de Retenção**: Cálculo e análise da taxa de clientes recorrentes
@@ -207,13 +207,13 @@ flowchart TD
   - **Análise de Satisfação**: Exploração dos fatores que impactam a avaliação dos clientes
 - **Resultados**: Modelos e recomendações acionáveis para o negócio
 
-### 6. Visualização e Dashboards (6_visualizacao_dashboards.ipynb)
+### 6. Visualização e Dashboards (6_visualizacao_dashboards.ipynb / 6_visualizacao_dashboards.py)
 - **Objetivo**: Criar painéis interativos para monitoramento de KPIs
 - **Dashboards**:
-  - Dashboard de evolução de vendas com filtros dinâmicos
-  - Mapa de calor por região para análise geográfica
-  - Análise de satisfação vs. tempo de entrega para gestão de expectativas
-  - Dashboard de desempenho de vendedores para incentivos e melhorias
+  - Dashboard de evolução de vendas com filtros dinâmicos por estado e categoria
+  - Mapa de calor por região/estado para análise geográfica de vendas
+  - Análise da relação entre avaliação do cliente e tempo de entrega
+  - Dashboard de desempenho de vendedores (volume, satisfação e tempo de entrega)
 - **Resultados**: Painéis interativos para tomada de decisão em tempo real
 
 ## Modelo de Dados
@@ -315,3 +315,63 @@ As análises realizadas geraram os seguintes insights principais:
    - Categorias com potencial de crescimento identificadas
    - Estados com baixa penetração mas alto ticket médio representam oportunidade
    - Recomendações para aumentar taxa de retenção de clientes
+
+## Resultados da Solução de Problemas de Negócio
+
+### 1. Análise de Retenção
+- Taxa de clientes recorrentes: apenas ~3% dos clientes realizaram mais de uma compra
+- A maioria dos clientes (97%) faz apenas uma compra e não retorna
+- Recomendações: implementar programa de fidelidade, melhorar comunicação pós-venda e oferecer descontos para compras recorrentes
+
+### 2. Predição de Atraso
+- Modelo de Random Forest com acurácia de ~85% para prever entregas atrasadas
+- Fatores principais que influenciam atrasos: distância entre vendedor e cliente, peso do produto, tempo estimado de entrega e período de alta demanda
+- Implementação permite ações preventivas e gerenciamento de expectativas dos clientes
+
+### 3. Segmentação de Clientes
+- Identificados 4 perfis principais de clientes:
+  - **Alto Valor**: Compram menos frequentemente, mas com alto ticket médio
+  - **Compradores Frequentes**: Realizaram múltiplas compras de valor médio
+  - **Compradores Casuais**: Realizaram poucas compras de valor médio
+  - **Baixo Engajamento**: Compraram apenas uma vez com ticket baixo
+- Estratégias de marketing personalizadas para cada segmento demonstraram aumento na efetividade de campanhas
+
+### 4. Análise de Satisfação
+- Correlação negativa forte entre tempo de entrega e avaliação do cliente (-0.65)
+- Clientes com entregas realizadas antes do prazo previsto têm 3x mais probabilidade de dar notas máximas
+- Categorias com melhor avaliação: produtos para casa, decoração e brinquedos
+- Categorias com pior avaliação: eletrônicos e produtos frágeis
+
+## Dashboards Interativos
+
+### Visualização e Exportação
+Os dashboards são gerados automaticamente na pasta `dashboards/` nos formatos:
+- **HTML**: Interativo, para navegação no navegador.
+- **PNG**: Imagem estática, ideal para relatórios e apresentações.
+
+> **Observação:** Para exportação de imagens, é necessário o pacote `kaleido` (`pip install -U kaleido`).
+
+### Como visualizar
+- **HTML**: Abra no navegador para interatividade total.
+- **PNG**: Visualize diretamente ou insira em relatórios/presentações.
+
+### Principais Dashboards Gerados
+
+| Imagem (PNG) | Nome do Arquivo | Descrição |
+|---|---|---|
+| ![Evolução das Vendas](dashboards/sales_evolution_dashboard.png) | sales_evolution_dashboard | Evolução das vendas ao longo do tempo |
+| ![Evolução por Categoria](dashboards/sales_evolution_by_category_dashboard.png) | sales_evolution_by_category_dashboard | Evolução das vendas por categoria de produto |
+| ![Mapa de Calor](dashboards/sales_heatmap.png) | sales_heatmap | Mapa de calor de vendas por estado |
+| ![Correlação entre Estados](dashboards/state_correlation_heatmap.png) | state_correlation_heatmap | Correlação de vendas entre estados |
+| ![Ticket Médio por Estado](dashboards/average_ticket_by_state.png) | average_ticket_by_state | Ticket médio por estado |
+| ![Tempo de Entrega vs Avaliação](dashboards/delivery_time_vs_review.png) | delivery_time_vs_review | Tempo de entrega vs. avaliação do cliente |
+| ![Relação Entrega e Avaliação](dashboards/delivery_review_heatmap.png) | delivery_review_heatmap | Relação entre tempo de entrega e avaliação do cliente |
+| ![Impacto do Atraso](dashboards/delay_impact_on_review.png) | delay_impact_on_review | Impacto do atraso na avaliação do cliente |
+| ![Correlação Atraso-Avaliação](dashboards/delay_days_vs_review.png) | delay_days_vs_review | Correlação entre dias de atraso e avaliação |
+| ![Top Vendedores](dashboards/top_sellers_revenue.png) | top_sellers_revenue | Top 20 vendedores por receita total |
+| ![Performance dos Vendedores](dashboards/seller_performance_scatter.png) | seller_performance_scatter | Volume de vendas, avaliação e tempo de entrega |
+| ![Tempo de Entrega por Volume](dashboards/delivery_time_by_volume.png) | delivery_time_by_volume | Tempo de entrega por categoria de volume |
+| ![Avaliação por Estado do Vendedor](dashboards/review_by_seller_state.png) | review_by_seller_state | Avaliação média por estado do vendedor |
+| ![KPIs dos Vendedores](dashboards/seller_performance_kpis.png) | seller_performance_kpis | KPIs agregados dos vendedores |
+
+Cada dashboard possui também versões em HTML e png no mesmo diretório.
