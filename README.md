@@ -192,7 +192,7 @@ flowchart TD
   - Valor médio de pedido por estado brasileiro
 - **Resultados**: Visualizações e insights sobre padrões de vendas e logística
 
-### 5. Solução de Problemas de Negócio (5_solucao_problemas.ipynb / 5_solucao_problemas.py)
+### 5. Solução de Problemas de Negócio (5_solucao_problemas.ipynb)
 - **Objetivo**: Resolver questões específicas de negócio com análises avançadas
 - **Implementações**:
   - **Análise de Retenção**: Cálculo e análise da taxa de clientes recorrentes
@@ -201,7 +201,7 @@ flowchart TD
   - **Análise de Satisfação**: Exploração dos fatores que impactam a avaliação dos clientes
 - **Resultados**: Modelos e recomendações acionáveis para o negócio
 
-### 6. Visualização e Dashboards (6_visualizacao_dashboards.ipynb / 6_visualizacao_dashboards.py)
+### 6. Visualização e Dashboards (6_visualizacao_dashboards.ipynb)
 - **Objetivo**: Criar painéis interativos para monitoramento de KPIs
 - **Dashboards**:
   - Dashboard de evolução de vendas com filtros dinâmicos por estado e categoria
