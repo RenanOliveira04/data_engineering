@@ -1,4 +1,4 @@
-# Análise de Dados E-commerce Brasileiro - Teste Técnico triggo.ai
+# Engenharia e Análise de Dados E-commerce Brasileiro - Teste Técnico triggo.ai
 
 ## Descrição do Projeto
 Este projeto contém a solução para o teste técnico do Programa Trainee triggo.ai de Excelência em Engenharia de Dados e DataOps 2025. 
