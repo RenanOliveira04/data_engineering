@@ -318,9 +318,10 @@ As análises realizadas geraram os seguintes insights principais:
 - Recomendações: implementar programa de fidelidade, melhorar comunicação pós-venda e oferecer descontos para compras recorrentes
 
 ### 2. Predição de Atraso
-- Modelo de Random Forest com acurácia de ~85% para prever entregas atrasadas
-- Fatores principais que influenciam atrasos: distância entre vendedor e cliente, peso do produto, tempo estimado de entrega e período de alta demanda
-- Implementação permite ações preventivas e gerenciamento de expectativas dos clientes
+- Modelo de Random Forest para prever entregas atrasadas.
+- Fatores que influenciam atrasos incluem: peso e volume do produto, valor do frete, razão preço/frete, se cliente e vendedor são do mesmo estado, e o estado do cliente
+- O pipeline gera e salva gráficos da importância das features, matrizes de confusão e métricas de avaliação do modelo.
+- A implementação permite ações preventivas e gerenciamento de expectativas dos clientes.
 
 ### 3. Segmentação de Clientes
 - Identificados 4 perfis principais de clientes:
